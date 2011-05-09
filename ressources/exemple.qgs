@@ -1,0 +1,1023 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="Master Class SIG-LL" version="1.7.0-Wroclaw">
+    <title>Master Class SIG-LL</title>
+    <mapcanvas>
+        <units>meters</units>
+        <extent>
+            <xmin>592075.665670</xmin>
+            <ymin>122883.177256</ymin>
+            <xmax>609008.635939</xmax>
+            <ymax>133993.649293</ymax>
+        </extent>
+        <projections>1</projections>
+        <destinationsrs>
+            <spatialrefsys>
+                <proj4>+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs</proj4>
+                <srsid>10081</srsid>
+                <srid>320002101</srid>
+                <authid>IGNF:LAMB1</authid>
+                <description>Lambert I</description>
+                <projectionacronym>lcc</projectionacronym>
+                <ellipsoidacronym>IGNF:ELG010</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+            </spatialrefsys>
+        </destinationsrs>
+    </mapcanvas>
+    <legend>
+        <legendgroup open="true" checked="Qt::Unchecked" name="Vecteurs">
+            <legendlayer open="false" checked="Qt::Unchecked" name="bati_mapinfo" showFeatureCount="0">
+                <filegroup open="false" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="bati_mapinfo20110508175937639" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer open="false" checked="Qt::Unchecked" name="jardin" showFeatureCount="0">
+                <filegroup open="false" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="jardin20110508173511769" visible="0"/>
+                </filegroup>
+            </legendlayer>
+        </legendgroup>
+        <legendgroup open="true" checked="Qt::Unchecked" name="Raster">
+            <legendlayer open="true" checked="Qt::Unchecked" name="srtm_ombrage" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="srtm_ombrage20110508191647268" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer open="true" checked="Qt::Unchecked" name="srtm_bassin_parisien" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="srtm_bassin_parisien20110508191643342" visible="0"/>
+                </filegroup>
+            </legendlayer>
+        </legendgroup>
+        <legendgroup open="true" checked="Qt::Unchecked" name="Sources réseaux">
+            <legendlayer open="true" checked="Qt::Unchecked" name="BRGM" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="SCAN_H_GEOL50_SCAN_SCAN_F_GEOL25020110508192951628" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer open="true" checked="Qt::Unchecked" name="BRGM avec cache" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="Geologie20110508192835202" visible="0"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer open="true" checked="Qt::Unchecked" name="OpenStreetMap" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20110508192709209" visible="0"/>
+                </filegroup>
+            </legendlayer>
+        </legendgroup>
+    </legend>
+    <projectlayers layercount="7">
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>Geologie20110508192835202</id>
+            <datasource>tiled=256;256;1056.63366300000006958726;528.31683169999996607658;264.15841580000000021755;132.07920790000000010878;66.03960395999999377636;26.41584157999999860067;13.22916666799999951820;6.61458333399999975910;2.64583333400000020319,url=http://geoservices.brgm.fr/WMS-C/</datasource>
+            <layername>BRGM avec cache</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=lcc +lat_1=46.8 +lat_0=46.8 +lon_0=0 +k_0=0.99987742 +x_0=600000 +y_0=2200000 +a=6378249.2 +b=6356515 +towgs84=-168,-60,320,0,0,0,0 +pm=2.3372291666985 +units=m +no_defs</proj4>
+                    <srsid>2430</srsid>
+                    <srid>27582</srid>
+                    <authid>EPSG:27582</authid>
+                    <description>NTF (Paris) / France II (deprecated)</description>
+                    <projectionacronym>lcc</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider>wms</provider>
+            <rasterproperties>
+                <wmsSublayer>
+                    <name>Geologie</name>
+                    <style></style>
+                </wmsSublayer>
+                <wmsFormat>image/png</wmsFormat>
+                <mDrawingStyle>SingleBandColorDataStyle</mDrawingStyle>
+                <mColorShadingAlgorithm>UndefinedShader</mColorShadingAlgorithm>
+                <mInvertColor boolean="false"/>
+                <mRedBandName></mRedBandName>
+                <mGreenBandName></mGreenBandName>
+                <mBlueBandName></mBlueBandName>
+                <mGrayBandName>Bande 1</mGrayBandName>
+                <mStandardDeviations>0</mStandardDeviations>
+                <mUserDefinedRGBMinimumMaximum boolean="false"/>
+                <mRGBMinimumMaximumEstimated boolean="true"/>
+                <mUserDefinedGrayMinimumMaximum boolean="false"/>
+                <mGrayMinimumMaximumEstimated boolean="true"/>
+                <mContrastEnhancementAlgorithm>NoEnhancement</mContrastEnhancementAlgorithm>
+                <contrastEnhancementMinMaxValues>
+                    <minMaxEntry>
+                        <min>-1.79769e+308</min>
+                        <max>1.79769e+308</max>
+                    </minMaxEntry>
+                </contrastEnhancementMinMaxValues>
+                <mNoDataValue mValidNoDataValue="false">0.000000</mNoDataValue>
+            </rasterproperties>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" ol_layer_type="4" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
+            <id>OpenLayers_plugin_layer20110508192709209</id>
+            <datasource></datasource>
+            <layername>OpenStreetMap</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +over +no_defs</proj4>
+                    <srsid>3644</srsid>
+                    <srid>900913</srid>
+                    <authid>EPSG:900913</authid>
+                    <description>Google Mercator</description>
+                    <projectionacronym>merc</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>SCAN_H_GEOL50_SCAN_SCAN_F_GEOL25020110508192951628</id>
+            <datasource>http://geoservices.brgm.fr/geologie</datasource>
+            <layername>BRGM</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider>wms</provider>
+            <rasterproperties>
+                <wmsSublayer>
+                    <name>SCAN_H_GEOL50_SCAN</name>
+                    <style></style>
+                </wmsSublayer>
+                <wmsSublayer>
+                    <name>SCAN_F_GEOL250</name>
+                    <style></style>
+                </wmsSublayer>
+                <wmsFormat>image/png</wmsFormat>
+                <mDrawingStyle>SingleBandColorDataStyle</mDrawingStyle>
+                <mColorShadingAlgorithm>UndefinedShader</mColorShadingAlgorithm>
+                <mInvertColor boolean="false"/>
+                <mRedBandName></mRedBandName>
+                <mGreenBandName></mGreenBandName>
+                <mBlueBandName></mBlueBandName>
+                <mGrayBandName>Bande 1</mGrayBandName>
+                <mStandardDeviations>0</mStandardDeviations>
+                <mUserDefinedRGBMinimumMaximum boolean="false"/>
+                <mRGBMinimumMaximumEstimated boolean="true"/>
+                <mUserDefinedGrayMinimumMaximum boolean="false"/>
+                <mGrayMinimumMaximumEstimated boolean="true"/>
+                <mContrastEnhancementAlgorithm>NoEnhancement</mContrastEnhancementAlgorithm>
+                <contrastEnhancementMinMaxValues>
+                    <minMaxEntry>
+                        <min>-1.79769e+308</min>
+                        <max>1.79769e+308</max>
+                    </minMaxEntry>
+                </contrastEnhancementMinMaxValues>
+                <mNoDataValue mValidNoDataValue="true">0.000000</mNoDataValue>
+                <singleValuePixelList>
+                    <pixelListEntry pixelValue="0.000000" percentTransparent="100"/>
+                </singleValuePixelList>
+                <threeValuePixelList>
+                    <pixelListEntry red="0.000000" blue="0.000000" green="0.000000" percentTransparent="100"/>
+                </threeValuePixelList>
+            </rasterproperties>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>bati_mapinfo20110508175937639</id>
+            <datasource>./vecteurs/bati_mapinfo.mif</datasource>
+            <layername>bati_mapinfo</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs</proj4>
+                    <srsid>10081</srsid>
+                    <srid>320002101</srid>
+                    <authid>IGNF:LAMB1</authid>
+                    <description>Lambert I</description>
+                    <projectionacronym>lcc</projectionacronym>
+                    <ellipsoidacronym>IGNF:ELG010</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="UTF-8">ogr</provider>
+            <vectorjoins/>
+            <renderer-v2 attr="NIVEAU" symbollevels="0" type="categorizedSymbol">
+                <categories>
+                    <category symbol="0" value="Sous sol" label="Sous sol"/>
+                    <category symbol="1" value="Surface" label="Surface"/>
+                </categories>
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="255,0,0,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="dash"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.5"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="1">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="0,170,255,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.5"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <source-symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="217,149,122,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </source-symbol>
+                <colorramp type="colorbrewer" name="[source]">
+                    <prop k="colors" v="11"/>
+                    <prop k="schemeName" v="RdYlGn"/>
+                </colorramp>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield>NIVEAU</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Étiquette"/>
+                <family fieldname="" name="Sans"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="INFO"/>
+                <edittype type="0" name="LIBELLE"/>
+                <edittype type="0" name="NIVEAU"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+            <overlay display="false" type="diagram">
+                <renderer item_interpretation="linear">
+                    <diagramitem size="0" value="0"/>
+                    <diagramitem size="0" value="0"/>
+                </renderer>
+                <factory sizeUnits="MM" type="Pie">
+                    <wellknownname>Pie</wellknownname>
+                    <classificationfield>0</classificationfield>
+                </factory>
+                <scalingAttribute>0</scalingAttribute>
+            </overlay>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>jardin20110508173511769</id>
+            <datasource>./vecteurs/jardin.shp</datasource>
+            <layername>jardin</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs</proj4>
+                    <srsid>100019</srsid>
+                    <srid>0</srid>
+                    <authid>USER:100019</authid>
+                    <description> * SCR généré (+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs)</description>
+                    <projectionacronym>lcc</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider encoding="System">ogr</provider>
+            <vectorjoins/>
+            <renderer-v2 attr="DENOM" symbollevels="0" type="categorizedSymbol">
+                <categories>
+                    <category symbol="0" value="Arboretum" label="Arboretum"/>
+                    <category symbol="1" value="Décoration" label="Décoration"/>
+                    <category symbol="2" value="Espace Vert" label="Espace Vert"/>
+                    <category symbol="3" value="Esplanade" label="Esplanade"/>
+                    <category symbol="4" value="Jardin" label="Jardin"/>
+                    <category symbol="5" value="Jardin Partagé" label="Jardin Partagé"/>
+                    <category symbol="6" value="Jardin d'immeubles" label="Jardin d'immeubles"/>
+                    <category symbol="7" value="Jardinet" label="Jardinet"/>
+                    <category symbol="8" value="Jardinière" label="Jardinière"/>
+                    <category symbol="9" value="Mail" label="Mail"/>
+                    <category symbol="10" value="Murs végétalisés" label="Murs végétalisés"/>
+                    <category symbol="11" value="Parc" label="Parc"/>
+                    <category symbol="12" value="Pelouse" label="Pelouse"/>
+                    <category symbol="13" value="Plate-bande" label="Plate-bande"/>
+                    <category symbol="14" value="Promenade" label="Promenade"/>
+                    <category symbol="15" value="Square" label="Square"/>
+                    <category symbol="16" value="Talus" label="Talus"/>
+                    <category symbol="17" value="Terrain de boules" label="Terrain de boules"/>
+                </categories>
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="165,0,38,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="1">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="165,0,38,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="10">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="217,239,139,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="11">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="217,239,139,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="12">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="166,217,106,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="13">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="166,217,106,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="14">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="102,189,99,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="15">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="26,152,80,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="16">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="26,152,80,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="17">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="0,104,55,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="2">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="215,48,39,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="3">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="215,48,39,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="4">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="244,109,67,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="5">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="253,174,97,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="6">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="253,174,97,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="7">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="254,224,139,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="8">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="254,224,139,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="9">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="255,255,191,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <source-symbol>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="9,143,22,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </source-symbol>
+                <colorramp type="colorbrewer" name="[source]">
+                    <prop k="colors" v="11"/>
+                    <prop k="schemeName" v="RdYlGn"/>
+                </colorramp>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield>NOM</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Étiquette"/>
+                <family fieldname="" name="Sans"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="ACCES"/>
+                <edittype type="0" name="ANNEEC"/>
+                <edittype type="0" name="ANNEER"/>
+                <edittype type="0" name="DATE_MAJ"/>
+                <edittype type="0" name="DENOM"/>
+                <edittype type="0" name="HORAIRE"/>
+                <edittype type="0" name="LABEL"/>
+                <edittype type="0" name="L_RIVIERE"/>
+                <edittype type="0" name="L_SOUTNMT"/>
+                <edittype type="0" name="L_VOIE"/>
+                <edittype type="0" name="NAIREJEUX"/>
+                <edittype type="0" name="NOM"/>
+                <edittype type="0" name="N_AFFICH"/>
+                <edittype type="0" name="N_ARBRE"/>
+                <edittype type="0" name="N_BANC"/>
+                <edittype type="0" name="N_CANDEL"/>
+                <edittype type="0" name="N_CORBEIL"/>
+                <edittype type="0" name="N_ENTREE"/>
+                <edittype type="0" name="N_EQTSPORT"/>
+                <edittype type="0" name="N_ESCALIER"/>
+                <edittype type="0" name="N_FNTMONUM"/>
+                <edittype type="0" name="N_FNTPOTA"/>
+                <edittype type="0" name="N_GROTTE"/>
+                <edittype type="0" name="N_JEUX"/>
+                <edittype type="0" name="N_KIOSQUE"/>
+                <edittype type="0" name="N_MONUMENT"/>
+                <edittype type="0" name="N_OEUV_ART"/>
+                <edittype type="0" name="N_PAN_REGL"/>
+                <edittype type="0" name="N_PONT"/>
+                <edittype type="0" name="N_POUBELLE"/>
+                <edittype type="0" name="N_PSRELLE"/>
+                <edittype type="0" name="N_SANIC"/>
+                <edittype type="0" name="RISQUE"/>
+                <edittype type="0" name="SAIREJEUX"/>
+                <edittype type="0" name="S_AQUAT"/>
+                <edittype type="0" name="S_BATIE"/>
+                <edittype type="0" name="S_CALCUL"/>
+                <edittype type="0" name="S_HORTI"/>
+                <edittype type="0" name="S_MINERALE"/>
+                <edittype type="0" name="S_NAT"/>
+                <edittype type="0" name="S_TOT"/>
+                <edittype type="0" name="VALIDITE"/>
+            </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+            <overlay display="false" type="diagram">
+                <renderer item_interpretation="linear">
+                    <diagramitem size="0" value="0"/>
+                    <diagramitem size="0" value="0"/>
+                </renderer>
+                <factory sizeUnits="MM" type="Pie">
+                    <wellknownname>Pie</wellknownname>
+                    <classificationfield>0</classificationfield>
+                </factory>
+                <scalingAttribute>0</scalingAttribute>
+            </overlay>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>srtm_bassin_parisien20110508191643342</id>
+            <datasource>./raster/srtm_bassin_parisien.tif</datasource>
+            <layername>srtm_bassin_parisien</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs</proj4>
+                    <srsid>100019</srsid>
+                    <srid>0</srid>
+                    <authid>USER:100019</authid>
+                    <description> * SCR généré (+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs)</description>
+                    <projectionacronym>lcc</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <customproperties/>
+            <provider>gdal</provider>
+            <rasterproperties>
+                <mDrawingStyle>SingleBandPseudoColor</mDrawingStyle>
+                <mColorShadingAlgorithm>ColorRampShader</mColorShadingAlgorithm>
+                <mInvertColor boolean="false"/>
+                <mRedBandName>Not Set</mRedBandName>
+                <mGreenBandName>Not Set</mGreenBandName>
+                <mBlueBandName>Not Set</mBlueBandName>
+                <mGrayBandName>Bande 1</mGrayBandName>
+                <mStandardDeviations>0</mStandardDeviations>
+                <mUserDefinedRGBMinimumMaximum boolean="false"/>
+                <mRGBMinimumMaximumEstimated boolean="true"/>
+                <mUserDefinedGrayMinimumMaximum boolean="false"/>
+                <mGrayMinimumMaximumEstimated boolean="false"/>
+                <mContrastEnhancementAlgorithm>NoEnhancement</mContrastEnhancementAlgorithm>
+                <contrastEnhancementMinMaxValues>
+                    <minMaxEntry>
+                        <min>-1002</min>
+                        <max>1841</max>
+                    </minMaxEntry>
+                </contrastEnhancementMinMaxValues>
+                <mNoDataValue mValidNoDataValue="true">-2147483648.000000</mNoDataValue>
+                <singleValuePixelList>
+                    <pixelListEntry pixelValue="-2147483648.000000" percentTransparent="100"/>
+                </singleValuePixelList>
+                <threeValuePixelList>
+                    <pixelListEntry red="-2147483648.000000" blue="-2147483648.000000" green="-2147483648.000000" percentTransparent="100"/>
+                </threeValuePixelList>
+                <customColorRamp>
+                    <colorRampType>DISCRETE</colorRampType>
+                    <colorRampEntry red="1" blue="1" value="-0.009700" green="1" label=" "/>
+                    <colorRampEntry red="2" blue="2" value="0.061370" green="2" label=" "/>
+                    <colorRampEntry red="3" blue="3" value="0.132450" green="3" label=" "/>
+                    <colorRampEntry red="4" blue="4" value="0.203520" green="4" label=" "/>
+                    <colorRampEntry red="5" blue="5" value="0.274590" green="5" label=" "/>
+                    <colorRampEntry red="6" blue="6" value="0.345670" green="6" label=" "/>
+                    <colorRampEntry red="7" blue="7" value="0.416740" green="7" label=" "/>
+                    <colorRampEntry red="8" blue="8" value="0.985330" green="8" label=" "/>
+                    <colorRampEntry red="9" blue="9" value="11.930600" green="9" label=" "/>
+                    <colorRampEntry red="10" blue="10" value="22.946950" green="10" label=" "/>
+                    <colorRampEntry red="11" blue="11" value="31.973250" green="11" label=" "/>
+                    <colorRampEntry red="12" blue="12" value="39.933450" green="12" label=" "/>
+                    <colorRampEntry red="13" blue="13" value="44.979650" green="13" label=" "/>
+                    <colorRampEntry red="14" blue="14" value="49.954780" green="14" label=" "/>
+                    <colorRampEntry red="15" blue="15" value="52.939850" green="15" label=" "/>
+                    <colorRampEntry red="16" blue="16" value="56.991020" green="16" label=" "/>
+                    <colorRampEntry red="17" blue="17" value="59.976100" green="17" label=" "/>
+                    <colorRampEntry red="18" blue="18" value="62.961180" green="18" label=" "/>
+                    <colorRampEntry red="19" blue="19" value="64.951230" green="19" label=" "/>
+                    <colorRampEntry red="20" blue="20" value="66.941280" green="20" label=" "/>
+                    <colorRampEntry red="21" blue="21" value="69.997420" green="21" label=" "/>
+                    <colorRampEntry red="22" blue="22" value="70.992450" green="22" label=" "/>
+                    <colorRampEntry red="23" blue="23" value="71.987470" green="23" label=" "/>
+                    <colorRampEntry red="24" blue="24" value="73.977520" green="24" label=" "/>
+                    <colorRampEntry red="25" blue="25" value="74.972550" green="25" label=" "/>
+                    <colorRampEntry red="26" blue="26" value="75.967580" green="26" label=" "/>
+                    <colorRampEntry red="27" blue="27" value="77.957630" green="27" label=" "/>
+                    <colorRampEntry red="28" blue="28" value="79.947680" green="28" label=" "/>
+                    <colorRampEntry red="29" blue="29" value="80.942700" green="29" label=" "/>
+                    <colorRampEntry red="30" blue="30" value="81.937730" green="30" label=" "/>
+                    <colorRampEntry red="31" blue="31" value="82.932750" green="31" label=" "/>
+                    <colorRampEntry red="32" blue="32" value="83.998850" green="32" label=" "/>
+                    <colorRampEntry red="33" blue="33" value="85.988900" green="33" label=" "/>
+                    <colorRampEntry red="34" blue="34" value="86.059970" green="34" label=" "/>
+                    <colorRampEntry red="35" blue="35" value="87.978950" green="35" label=" "/>
+                    <colorRampEntry red="36" blue="36" value="88.973980" green="36" label=" "/>
+                    <colorRampEntry red="37" blue="37" value="89.969000" green="37" label=" "/>
+                    <colorRampEntry red="38" blue="38" value="90.964030" green="38" label=" "/>
+                    <colorRampEntry red="39" blue="39" value="91.959050" green="39" label=" "/>
+                    <colorRampEntry red="40" blue="40" value="92.954080" green="40" label=" "/>
+                    <colorRampEntry red="41" blue="41" value="93.949100" green="41" label=" "/>
+                    <colorRampEntry red="42" blue="42" value="94.944130" green="42" label=" "/>
+                    <colorRampEntry red="43" blue="43" value="95.939150" green="43" label=" "/>
+                    <colorRampEntry red="44" blue="44" value="96.934170" green="44" label=" "/>
+                    <colorRampEntry red="45" blue="45" value="97.929200" green="45" label=" "/>
+                    <colorRampEntry red="46" blue="46" value="98.000270" green="46" label=" "/>
+                    <colorRampEntry red="47" blue="47" value="99.990330" green="47" label=" "/>
+                    <colorRampEntry red="48" blue="48" value="100.061400" green="48" label=" "/>
+                    <colorRampEntry red="49" blue="49" value="100.985350" green="49" label=" "/>
+                    <colorRampEntry red="50" blue="50" value="101.056430" green="50" label=" "/>
+                    <colorRampEntry red="51" blue="51" value="101.980380" green="51" label=" "/>
+                    <colorRampEntry red="52" blue="52" value="102.975400" green="52" label=" "/>
+                    <colorRampEntry red="53" blue="53" value="103.970430" green="53" label=" "/>
+                    <colorRampEntry red="54" blue="54" value="104.965450" green="54" label=" "/>
+                    <colorRampEntry red="55" blue="55" value="105.960480" green="55" label=" "/>
+                    <colorRampEntry red="56" blue="56" value="106.955500" green="56" label=" "/>
+                    <colorRampEntry red="57" blue="57" value="107.950520" green="57" label=" "/>
+                    <colorRampEntry red="58" blue="58" value="108.021600" green="58" label=" "/>
+                    <colorRampEntry red="59" blue="59" value="108.945550" green="59" label=" "/>
+                    <colorRampEntry red="60" blue="60" value="109.940570" green="60" label=" "/>
+                    <colorRampEntry red="61" blue="61" value="110.011650" green="61" label=" "/>
+                    <colorRampEntry red="62" blue="62" value="110.935600" green="62" label=" "/>
+                    <colorRampEntry red="63" blue="63" value="111.930630" green="63" label=" "/>
+                    <colorRampEntry red="64" blue="64" value="112.001700" green="64" label=" "/>
+                    <colorRampEntry red="65" blue="65" value="112.996730" green="65" label=" "/>
+                    <colorRampEntry red="66" blue="66" value="113.991750" green="66" label=" "/>
+                    <colorRampEntry red="67" blue="67" value="114.986780" green="67" label=" "/>
+                    <colorRampEntry red="68" blue="68" value="115.981800" green="68" label=" "/>
+                    <colorRampEntry red="69" blue="69" value="116.052870" green="69" label=" "/>
+                    <colorRampEntry red="70" blue="70" value="116.976820" green="70" label=" "/>
+                    <colorRampEntry red="71" blue="71" value="117.047900" green="71" label=" "/>
+                    <colorRampEntry red="72" blue="72" value="117.971850" green="72" label=" "/>
+                    <colorRampEntry red="73" blue="73" value="118.966870" green="73" label=" "/>
+                    <colorRampEntry red="74" blue="74" value="119.961900" green="74" label=" "/>
+                    <colorRampEntry red="75" blue="75" value="120.956920" green="75" label=" "/>
+                    <colorRampEntry red="76" blue="76" value="121.951950" green="76" label=" "/>
+                    <colorRampEntry red="77" blue="77" value="122.023030" green="77" label=" "/>
+                    <colorRampEntry red="78" blue="78" value="122.094100" green="78" label=" "/>
+                    <colorRampEntry red="79" blue="79" value="122.946980" green="79" label=" "/>
+                    <colorRampEntry red="80" blue="80" value="123.942000" green="80" label=" "/>
+                    <colorRampEntry red="81" blue="81" value="124.937030" green="81" label=" "/>
+                    <colorRampEntry red="82" blue="82" value="125.008100" green="82" label=" "/>
+                    <colorRampEntry red="83" blue="83" value="125.932050" green="83" label=" "/>
+                    <colorRampEntry red="84" blue="84" value="126.998150" green="84" label=" "/>
+                    <colorRampEntry red="85" blue="85" value="127.069220" green="85" label=" "/>
+                    <colorRampEntry red="86" blue="86" value="127.993170" green="86" label=" "/>
+                    <colorRampEntry red="87" blue="87" value="128.988200" green="87" label=" "/>
+                    <colorRampEntry red="88" blue="88" value="129.983230" green="88" label=" "/>
+                    <colorRampEntry red="89" blue="89" value="130.054310" green="89" label=" "/>
+                    <colorRampEntry red="90" blue="90" value="130.978260" green="90" label=" "/>
+                    <colorRampEntry red="91" blue="91" value="131.973280" green="91" label=" "/>
+                    <colorRampEntry red="92" blue="92" value="132.968310" green="92" label=" "/>
+                    <colorRampEntry red="93" blue="93" value="133.963330" green="93" label=" "/>
+                    <colorRampEntry red="94" blue="94" value="134.958340" green="94" label=" "/>
+                    <colorRampEntry red="95" blue="95" value="135.029420" green="95" label=" "/>
+                    <colorRampEntry red="96" blue="96" value="135.100490" green="96" label=" "/>
+                    <colorRampEntry red="97" blue="97" value="135.953370" green="97" label=" "/>
+                    <colorRampEntry red="98" blue="98" value="136.948390" green="98" label=" "/>
+                    <colorRampEntry red="99" blue="99" value="137.943420" green="99" label=" "/>
+                    <colorRampEntry red="100" blue="100" value="138.938450" green="100" label=" "/>
+                    <colorRampEntry red="101" blue="101" value="139.009520" green="101" label=" "/>
+                    <colorRampEntry red="102" blue="102" value="139.933470" green="102" label=" "/>
+                    <colorRampEntry red="103" blue="103" value="140.999570" green="103" label=" "/>
+                    <colorRampEntry red="104" blue="104" value="141.070650" green="104" label=" "/>
+                    <colorRampEntry red="105" blue="105" value="142.989620" green="105" label=" "/>
+                    <colorRampEntry red="106" blue="106" value="143.984650" green="106" label=" "/>
+                    <colorRampEntry red="107" blue="107" value="144.979680" green="107" label=" "/>
+                    <colorRampEntry red="108" blue="108" value="145.974700" green="108" label=" "/>
+                    <colorRampEntry red="109" blue="109" value="146.969730" green="109" label=" "/>
+                    <colorRampEntry red="110" blue="110" value="147.964750" green="110" label=" "/>
+                    <colorRampEntry red="111" blue="111" value="148.959780" green="111" label=" "/>
+                    <colorRampEntry red="112" blue="112" value="149.954800" green="112" label=" "/>
+                    <colorRampEntry red="113" blue="113" value="150.025880" green="113" label=" "/>
+                    <colorRampEntry red="114" blue="114" value="150.949830" green="114" label=" "/>
+                    <colorRampEntry red="115" blue="115" value="151.944850" green="115" label=" "/>
+                    <colorRampEntry red="116" blue="116" value="152.939880" green="116" label=" "/>
+                    <colorRampEntry red="117" blue="117" value="153.934910" green="117" label=" "/>
+                    <colorRampEntry red="118" blue="118" value="154.929930" green="118" label=" "/>
+                    <colorRampEntry red="119" blue="119" value="155.996030" green="119" label=" "/>
+                    <colorRampEntry red="120" blue="120" value="156.991040" green="120" label=" "/>
+                    <colorRampEntry red="121" blue="121" value="158.981090" green="121" label=" "/>
+                    <colorRampEntry red="122" blue="122" value="159.976120" green="122" label=" "/>
+                    <colorRampEntry red="123" blue="123" value="160.971150" green="123" label=" "/>
+                    <colorRampEntry red="124" blue="124" value="161.966170" green="124" label=" "/>
+                    <colorRampEntry red="125" blue="125" value="162.961200" green="125" label=" "/>
+                    <colorRampEntry red="126" blue="126" value="163.956220" green="126" label=" "/>
+                    <colorRampEntry red="127" blue="127" value="164.951250" green="127" label=" "/>
+                    <colorRampEntry red="128" blue="128" value="166.941300" green="128" label=" "/>
+                    <colorRampEntry red="129" blue="129" value="167.936330" green="129" label=" "/>
+                    <colorRampEntry red="130" blue="130" value="168.931350" green="130" label=" "/>
+                    <colorRampEntry red="131" blue="131" value="169.997450" green="131" label=" "/>
+                    <colorRampEntry red="132" blue="132" value="170.992480" green="132" label=" "/>
+                    <colorRampEntry red="133" blue="133" value="171.987500" green="133" label=" "/>
+                    <colorRampEntry red="134" blue="134" value="173.977550" green="134" label=" "/>
+                    <colorRampEntry red="135" blue="135" value="175.967610" green="135" label=" "/>
+                    <colorRampEntry red="136" blue="136" value="176.962630" green="136" label=" "/>
+                    <colorRampEntry red="137" blue="137" value="178.952680" green="137" label=" "/>
+                    <colorRampEntry red="138" blue="138" value="180.942730" green="138" label=" "/>
+                    <colorRampEntry red="139" blue="139" value="181.937740" green="139" label=" "/>
+                    <colorRampEntry red="140" blue="140" value="183.998870" green="140" label=" "/>
+                    <colorRampEntry red="141" blue="141" value="184.993900" green="141" label=" "/>
+                    <colorRampEntry red="142" blue="142" value="185.988920" green="142" label=" "/>
+                    <colorRampEntry red="143" blue="143" value="186.983950" green="143" label=" "/>
+                    <colorRampEntry red="144" blue="144" value="187.978970" green="144" label=" "/>
+                    <colorRampEntry red="145" blue="145" value="190.964050" green="145" label=" "/>
+                    <colorRampEntry red="146" blue="146" value="192.954100" green="146" label=" "/>
+                    <colorRampEntry red="147" blue="147" value="193.949130" green="147" label=" "/>
+                    <colorRampEntry red="148" blue="148" value="195.939180" green="148" label=" "/>
+                    <colorRampEntry red="149" blue="149" value="197.929230" green="149" label=" "/>
+                    <colorRampEntry red="150" blue="150" value="200.985380" green="150" label=" "/>
+                    <colorRampEntry red="151" blue="151" value="202.975420" green="151" label=" "/>
+                    <colorRampEntry red="152" blue="152" value="204.965470" green="152" label=" "/>
+                    <colorRampEntry red="153" blue="153" value="206.955520" green="153" label=" "/>
+                    <colorRampEntry red="154" blue="154" value="208.945570" green="154" label=" "/>
+                    <colorRampEntry red="155" blue="155" value="209.940600" green="155" label=" "/>
+                    <colorRampEntry red="156" blue="156" value="211.930650" green="156" label=" "/>
+                    <colorRampEntry red="157" blue="157" value="212.996750" green="157" label=" "/>
+                    <colorRampEntry red="158" blue="158" value="215.981830" green="158" label=" "/>
+                    <colorRampEntry red="159" blue="159" value="216.976850" green="159" label=" "/>
+                    <colorRampEntry red="160" blue="160" value="219.961930" green="160" label=" "/>
+                    <colorRampEntry red="161" blue="161" value="221.951980" green="161" label=" "/>
+                    <colorRampEntry red="162" blue="162" value="223.942030" green="162" label=" "/>
+                    <colorRampEntry red="163" blue="163" value="225.932080" green="163" label=" "/>
+                    <colorRampEntry red="164" blue="164" value="228.988220" green="164" label=" "/>
+                    <colorRampEntry red="165" blue="165" value="231.973300" green="165" label=" "/>
+                    <colorRampEntry red="166" blue="166" value="233.963350" green="166" label=" "/>
+                    <colorRampEntry red="167" blue="167" value="235.953400" green="167" label=" "/>
+                    <colorRampEntry red="168" blue="168" value="236.024480" green="168" label=" "/>
+                    <colorRampEntry red="169" blue="169" value="238.938480" green="169" label=" "/>
+                    <colorRampEntry red="170" blue="170" value="239.933500" green="170" label=" "/>
+                    <colorRampEntry red="171" blue="171" value="242.989650" green="171" label=" "/>
+                    <colorRampEntry red="172" blue="172" value="246.969760" green="172" label=" "/>
+                    <colorRampEntry red="173" blue="173" value="249.954820" green="173" label=" "/>
+                    <colorRampEntry red="174" blue="174" value="252.939900" green="174" label=" "/>
+                    <colorRampEntry red="175" blue="175" value="255.996050" green="175" label=" "/>
+                    <colorRampEntry red="176" blue="176" value="258.981140" green="176" label=" "/>
+                    <colorRampEntry red="177" blue="177" value="262.961210" green="177" label=" "/>
+                    <colorRampEntry red="178" blue="178" value="265.946290" green="178" label=" "/>
+                    <colorRampEntry red="179" blue="179" value="268.931370" green="179" label=" "/>
+                    <colorRampEntry red="180" blue="180" value="271.987520" green="180" label=" "/>
+                    <colorRampEntry red="181" blue="181" value="275.967620" green="181" label=" "/>
+                    <colorRampEntry red="182" blue="182" value="277.957670" green="182" label=" "/>
+                    <colorRampEntry red="183" blue="183" value="280.942750" green="183" label=" "/>
+                    <colorRampEntry red="184" blue="184" value="282.932800" green="184" label=" "/>
+                    <colorRampEntry red="185" blue="185" value="286.983980" green="185" label=" "/>
+                    <colorRampEntry red="186" blue="186" value="293.949160" green="186" label=" "/>
+                    <colorRampEntry red="187" blue="187" value="297.929260" green="187" label=" "/>
+                    <colorRampEntry red="188" blue="188" value="301.980440" green="188" label=" "/>
+                    <colorRampEntry red="189" blue="189" value="304.965520" green="189" label=" "/>
+                    <colorRampEntry red="190" blue="190" value="309.940610" green="190" label=" "/>
+                    <colorRampEntry red="191" blue="191" value="312.996770" green="191" label=" "/>
+                    <colorRampEntry red="192" blue="192" value="316.976870" green="192" label=" "/>
+                    <colorRampEntry red="193" blue="193" value="320.956970" green="193" label=" "/>
+                    <colorRampEntry red="194" blue="194" value="323.942050" green="194" label=" "/>
+                    <colorRampEntry red="195" blue="195" value="326.998200" green="195" label=" "/>
+                    <colorRampEntry red="196" blue="196" value="334.958400" green="196" label=" "/>
+                    <colorRampEntry red="197" blue="197" value="339.933530" green="197" label=" "/>
+                    <colorRampEntry red="198" blue="198" value="343.984710" green="198" label=" "/>
+                    <colorRampEntry red="199" blue="199" value="349.954860" green="199" label=" "/>
+                    <colorRampEntry red="200" blue="200" value="353.934940" green="200" label=" "/>
+                    <colorRampEntry red="201" blue="201" value="356.991090" green="201" label=" "/>
+                    <colorRampEntry red="202" blue="202" value="359.976170" green="202" label=" "/>
+                    <colorRampEntry red="203" blue="203" value="366.941350" green="203" label=" "/>
+                    <colorRampEntry red="204" blue="204" value="371.987550" green="204" label=" "/>
+                    <colorRampEntry red="205" blue="205" value="376.962680" green="205" label=" "/>
+                    <colorRampEntry red="206" blue="206" value="385.988980" green="206" label=" "/>
+                    <colorRampEntry red="207" blue="207" value="392.954160" green="207" label=" "/>
+                    <colorRampEntry red="208" blue="208" value="399.990390" green="208" label=" "/>
+                    <colorRampEntry red="209" blue="209" value="403.970490" green="209" label=" "/>
+                    <colorRampEntry red="210" blue="210" value="405.960540" green="210" label=" "/>
+                    <colorRampEntry red="211" blue="211" value="414.986850" green="211" label=" "/>
+                    <colorRampEntry red="212" blue="212" value="419.961980" green="212" label=" "/>
+                    <colorRampEntry red="213" blue="213" value="428.988280" green="213" label=" "/>
+                    <colorRampEntry red="214" blue="214" value="436.948490" green="214" label=" "/>
+                    <colorRampEntry red="215" blue="215" value="443.984710" green="215" label=" "/>
+                    <colorRampEntry red="216" blue="216" value="452.939940" green="216" label=" "/>
+                    <colorRampEntry red="217" blue="217" value="460.971220" green="217" label=" "/>
+                    <colorRampEntry red="218" blue="218" value="473.977630" green="218" label=" "/>
+                    <colorRampEntry red="219" blue="219" value="482.932860" green="219" label=" "/>
+                    <colorRampEntry red="220" blue="220" value="492.954160" green="220" label=" "/>
+                    <colorRampEntry red="221" blue="221" value="502.975490" green="221" label=" "/>
+                    <colorRampEntry red="222" blue="222" value="512.996830" green="222" label=" "/>
+                    <colorRampEntry red="223" blue="223" value="523.942080" green="223" label=" "/>
+                    <colorRampEntry red="224" blue="224" value="533.963440" green="224" label=" "/>
+                    <colorRampEntry red="225" blue="225" value="552.940000" green="225" label=" "/>
+                    <colorRampEntry red="226" blue="226" value="564.951350" green="226" label=" "/>
+                    <colorRampEntry red="227" blue="227" value="573.977660" green="227" label=" "/>
+                    <colorRampEntry red="228" blue="228" value="594.944270" green="228" label=" "/>
+                    <colorRampEntry red="229" blue="229" value="604.965580" green="229" label=" "/>
+                    <colorRampEntry red="230" blue="230" value="621.952090" green="230" label=" "/>
+                    <colorRampEntry red="231" blue="231" value="640.999690" green="231" label=" "/>
+                    <colorRampEntry red="232" blue="232" value="658.981200" green="232" label=" "/>
+                    <colorRampEntry red="233" blue="233" value="670.992610" green="233" label=" "/>
+                    <colorRampEntry red="234" blue="234" value="686.984070" green="234" label=" "/>
+                    <colorRampEntry red="235" blue="235" value="715.981930" green="235" label=" "/>
+                    <colorRampEntry red="236" blue="236" value="736.948550" green="236" label=" "/>
+                    <colorRampEntry red="237" blue="237" value="754.930050" green="237" label=" "/>
+                    <colorRampEntry red="238" blue="238" value="769.997620" green="238" label=" "/>
+                    <colorRampEntry red="239" blue="239" value="782.932920" green="239" label=" "/>
+                    <colorRampEntry red="240" blue="240" value="806.955690" green="240" label=" "/>
+                    <colorRampEntry red="241" blue="241" value="856.991210" green="241" label=" "/>
+                    <colorRampEntry red="242" blue="242" value="892.954280" green="242" label=" "/>
+                    <colorRampEntry red="243" blue="243" value="926.998350" green="243" label=" "/>
+                    <colorRampEntry red="244" blue="244" value="946.969910" green="244" label=" "/>
+                    <colorRampEntry red="245" blue="245" value="983.999080" green="245" label=" "/>
+                    <colorRampEntry red="246" blue="246" value="1008.945800" green="246" label=" "/>
+                    <colorRampEntry red="247" blue="247" value="1056.991330" green="247" label=" "/>
+                    <colorRampEntry red="248" blue="248" value="1181.937990" green="248" label=" "/>
+                    <colorRampEntry red="249" blue="249" value="1291.793460" green="249" label=" "/>
+                    <colorRampEntry red="250" blue="250" value="1401.649050" green="250" label=" "/>
+                    <colorRampEntry red="251" blue="251" value="1511.504520" green="251" label=" "/>
+                    <colorRampEntry red="252" blue="252" value="1621.359990" green="252" label=" "/>
+                    <colorRampEntry red="253" blue="253" value="1731.215580" green="253" label=" "/>
+                    <colorRampEntry red="254" blue="254" value="1841.071040" green="254" label=" "/>
+                </customColorRamp>
+            </rasterproperties>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+            <id>srtm_ombrage20110508191647268</id>
+            <datasource>./raster/srtm_ombrage.tif</datasource>
+            <layername>srtm_ombrage</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs</proj4>
+                    <srsid>100019</srsid>
+                    <srid>0</srid>
+                    <authid>USER:100019</authid>
+                    <description> * SCR généré (+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs)</description>
+                    <projectionacronym>lcc</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>98</transparencyLevelInt>
+            <customproperties/>
+            <provider>gdal</provider>
+            <rasterproperties>
+                <mDrawingStyle>SingleBandGray</mDrawingStyle>
+                <mColorShadingAlgorithm>UndefinedShader</mColorShadingAlgorithm>
+                <mInvertColor boolean="false"/>
+                <mRedBandName>Not Set</mRedBandName>
+                <mGreenBandName>Not Set</mGreenBandName>
+                <mBlueBandName>Not Set</mBlueBandName>
+                <mGrayBandName>Bande 1</mGrayBandName>
+                <mStandardDeviations>0</mStandardDeviations>
+                <mUserDefinedRGBMinimumMaximum boolean="false"/>
+                <mRGBMinimumMaximumEstimated boolean="true"/>
+                <mUserDefinedGrayMinimumMaximum boolean="false"/>
+                <mGrayMinimumMaximumEstimated boolean="true"/>
+                <mContrastEnhancementAlgorithm>NoEnhancement</mContrastEnhancementAlgorithm>
+                <contrastEnhancementMinMaxValues>
+                    <minMaxEntry>
+                        <min>0</min>
+                        <max>255</max>
+                    </minMaxEntry>
+                </contrastEnhancementMinMaxValues>
+                <mNoDataValue mValidNoDataValue="true">0.000000</mNoDataValue>
+                <singleValuePixelList>
+                    <pixelListEntry pixelValue="0.000000" percentTransparent="100"/>
+                </singleValuePixelList>
+                <threeValuePixelList>
+                    <pixelListEntry red="0.000000" blue="0.000000" green="0.000000" percentTransparent="100"/>
+                </threeValuePixelList>
+            </rasterproperties>
+        </maplayer>
+    </projectlayers>
+    <properties>
+        <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+        <WMSContactPerson type="QString"></WMSContactPerson>
+        <Identify>
+            <disabledLayers type="QStringList"/>
+        </Identify>
+        <WMSContactPhone type="QString"></WMSContactPhone>
+        <SpatialRefSys>
+            <ProjectCRSProj4String type="QString">+proj=lcc +nadgrids=ntf_r93.gsb,null +a=6378249.2000 +rf=293.4660210000000 +pm=2.337229167 +lat_0=49.500000000 +lon_0=0.000000000 +k_0=0.99987734 +lat_1=49.500000000 +x_0=600000.000 +y_0=200000.000 +units=m +no_defs</ProjectCRSProj4String>
+            <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+            <ProjectCRSID type="int">10081</ProjectCRSID>
+            <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+        </SpatialRefSys>
+        <Gui>
+            <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+            <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+            <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+            <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+            <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+            <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+            <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+        </Gui>
+        <Paths>
+            <Absolute type="bool">false</Absolute>
+        </Paths>
+        <WMSContactMail type="QString"></WMSContactMail>
+        <PositionPrecision>
+            <DecimalPlaces type="int">2</DecimalPlaces>
+            <Automatic type="bool">true</Automatic>
+        </PositionPrecision>
+        <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+        <WMSContactOrganization type="QString"></WMSContactOrganization>
+        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+        <WMSServiceTitle type="QString"></WMSServiceTitle>
+    </properties>
+</qgis>
