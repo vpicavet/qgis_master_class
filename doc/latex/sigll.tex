@@ -1,0 +1,29 @@
+% !TEX encoding = utf8
+% !TEX TS-program = pdflatex
+
+% document type selection
+
+% example of the use of koma-script book class for draft
+% \documentclass[10pt,draft]{scrbook} % without fig and with print markers (great when playing with the layout)
+% \documentclass[10pt,DIV=8]{scrbook}
+ 
+% settings for the geometry package and Crown Quarto (18,89 x 24,58 cm)
+%\documentclass[10pt]{scrbook}
+%\usepackage[paperwidth=18.89cm,paperheight=24.58cm,twoside,bindingoffset=9mm,outer=1.4cm,inner=1.6cm,top=1.8cm,bottom=2.5cm]{geometry}
+
+% settings for the geometry package and A4 (21 x 29,7 cm)
+\documentclass[10pt]{scrbook}%
+\usepackage[paperwidth=21.0cm,paperheight=29.7cm,twoside,bindingoffset=9mm,outer=2.2cm,inner=1cm,top=2.6cm,bottom=2.5cm]{geometry}
+
+% load the style file
+\usepackage{qgis_style} 
+
+\begin{document}
+\pagestyle{scrheadings}
+\input{presentation}
+\input{interface}
+\input{symbologie}
+\input{composeur}
+\input{preferences}
+\input{postgis_wms_etc.tex}
+\end{document}
