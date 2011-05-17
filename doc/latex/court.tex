@@ -48,6 +48,23 @@ Décochez la case du groupe Rasters afin de ne plus afficher les couches qu'il c
 
 Sélectionnez le groupe Vecteurs, faites un clic-droit et cliquez sur \dropmenuopt{Zoomer sur le groupe}.
 
+\section{Préférences}\label{sec:} 
+
+\subsection{Propriétés du projet}
+
+Ouvrez le menu \mainmenuopt{Préférences}\arrow \dropmenuopttwo{mActionProjectProperties.png}{Propriétés du projet}, déplacez-vous dans l'onglet \dialog{Système de coordonnées de référence}. Cet onglet permet d'indiquer à QGIS le système général à utiliser pour le projet.
+
+Dans la case Rechercher, tapez l'identifiant LAMB1 puis le bouton \button{Trouver}. La liste présente dans la partie supérieure se focalise sur le système correspondant à ce code, à savoir la projection Lambert 1 telle qu'exprimée dans le registre IGNF.
+
+Cochez la case \checkbox{Activer la projection 'à la volée'}, elle permet de reprojeter des couches vectorielles ou raster vers le système général sans devoir les exporter vers celui-ci.
+
+\subsection{Options générales}
+
+Ouvrez le menu \mainmenuopt{Préférences}\arrow \dropmenuopttwo{mActionOptions}{Options}.
+
+Déplacez-vous dans l'onglet \tab{Outils cartographiques} et \selectstring{ellipsoïde pour les mesures de distances }{GRS 1980}.
+
+
 \section{Utiliser l'interface}\label{sec:ui_use} 
 
 \subsection{Sélectionner des entités}
@@ -107,3 +124,29 @@ Cliquez sur le bouton \includegraphics[width=0.7cm]{mActionOpenTable} qui permet
 Pour une simple recherche par attribut sur une seule colonne, le champ \button{Chercher pour} peut être utilisé. Sélectionnez la colonne \textit{NOM} sur laquelle doit être opérée la recherche depuis la liste déroulante, tapez \textit{Binet} et appuyez sur le bouton \button{Chercher}. 
 
 Cliquez sur le bouton \toolbtntwo{mActionZoomToSelected}{Zoomer la carte sur les lignes sélectionnées}
+
+\section{Symbologie}
+
+Pour accéder à la fenêtre \dialog{Propriétés de la couche}, double-cliquez sur la couche \textit{jardin} dans la légende ou faites un clic droit sur la couche et sélectionnez \dropmenuopt{Propriétés} dans le menu qui apparait.
+
+L'onglet \textbf{Style} est affiché, la représentation par défaut est le symbole unique où un style unique est appliqué à tous les objets de la couche. On peut d'ici modifier la \textbf{couleur} et la \textbf{transparence} de la couche.
+        
+\section{Symbologie avancée}
+  
+Pour opérer une classification des éléments de la couche, il faut passer dans la liste de \textit{symbole unique} à \textit{catégorisé} et choisir la colonne qui permettra de définir les différentes classes, ici la colonne \textit{DENOM}. Cliquez ensuite sur le bouton \button{Classer}, QGIS créé une liste des classes en déclinant une palette de couleurs.
+
+Plutôt que de changer les couleurs manuellement nous allons charger le style \filename{style jardin classification.qml} depuis le bouton \button{Charger le style}.
+
+\section{Composeur}
+
+Cliquez sur l'icône \includegraphics[width=0.7cm]{mActionNewComposer} ou le menu \mainmenuopt{Fichier} > \dropmenuopttwo{mActionNewComposer}{Nouveau composeur d'impression}.
+
+Le composeur de carte affiche deux onglets :
+
+\begin{itemize}[label=--]
+\item L'onglet \tab{Général} vous permet de définir la taille du papier, l'orientation et la qualité d'impression pour le fichier de sortie (en dpi/ppp) et d'activer l'accrochage sur une grille d'une résolution prédéfinie.
+\item L'onglet \tab{Objet} affiche les propriétés pour l'élément de la carte sélectionnée. Cliquez sur l'icône \toolbtntwo{mActionSelectPan}{Sélectionner/Déplacer l'objet}  pour sélectionner un élément (par exemple l'échelle graphique ou une étiquette) dans le cadre. Puis cliquez sur l'onglet Item et personnalisez les paramètres pour l'élément sélectionné.
+\item L'onglet \tab{Historique des commandes} permet de d'annuler ou refaire des manipulations.
+\end{itemize}
+
+Ajoutez une vue sur le canevas de la carte en utilisant le bouton \includegraphics[width=0.7cm]{mActionAddMap}
