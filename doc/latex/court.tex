@@ -166,3 +166,74 @@ Ajoutez une échelle graphique en utilisant le bouton \includegraphics[width=0.7
 Ajoutez une flèche pointant vers le Nord en utilisant le bouton \includegraphics[width=0.7cm]{mActionSaveMapAsImage} et en cliquant sur la carte puis sélectionnez le cadre et déplacez-vous dans l'onglet \textit{Objet}. Dans le cadre d'aperçu, sélectionnez une image de flèche.
 
 Exporter le résultat en PDF en appuyant sur le bouton \includegraphics[width=0.7cm]{mActionSaveAsPDF}.
+
+\section{Sources distantes}
+\subsection{Webservices}
+\begin{itemize}[label=--]
+\item Ouvrir les services WMS du BRGM : \url{http://geoservices.brgm.fr/geologie?}
+\item Ouvrir les services WMSC du BRGM (avec tuilage) : \url{http://geoservices.brgm.fr/WMS-C/?}
+\end{itemize}
+
+
+\subsection{PostGIS}
+\begin{itemize}[label=--]
+\item Connexion
+\item Charger des tables
+\item Vérifier que le résultat est le même en ouvrant le shapefile correspondant
+\item Éditer la symbologie - charger la symbologie pour les jardins
+\item Chargement de couche avec filtrage
+\item Accès aux données attributaires
+\end{itemize}
+
+
+\section{Édition de données}
+
+\begin{itemize}[label=--]
+\item Édition de données d'un Shapefile
+\item Édition de données d'une base PostGIS
+\item Vérification de l'aspect centralisé des modifications
+\end{itemize}
+
+\section{Traitements} 
+Utilisation des ftools pour :
+\begin{itemize}[label=--]
+\item Calculer les statistiques sur les jardins (nombres d'arbres, de bancs…)
+\item Créer des zones tampon autour des jardins
+\item Créer une couche de centroides des jardins
+\item Sélectionner les fontaines dans les jardins
+\item Calculer le nombre de fontaines dans chaque jardin
+\item Vérification de validité
+\item Simplification des géométries
+\end{itemize}
+
+\section{Fonctions avancées}
+
+\begin{itemize}[label=--]
+\item Notions sur le couplage avec GRASS
+\item Le système de plugins
+\item Traitements en base de données
+\end{itemize}
+
+\section{Évolution et futur}
+\subsection{Travaux en cours}
+\begin{itemize}[label=--]
+\item Multithreading
+\item Globe 3D
+\item QGIS Server
+\item Architecture de développement
+\item Architecture de plugins
+\item Orfeo ToolBox
+\item QGIS Mobile
+\item Interface
+\item Documentation
+\item Perennisation des rencontres de la communauté
+\end{itemize}
+\subsection{Questions}
+Nos questions :
+\begin{itemize}[label=--]
+\item Qu'attendez vous de QGIS ?
+\item Quels sont actuellement les points bloquants à votre utilisation ?
+\item Envisagez vous un déploiement ? À quelle échelle ?
+\end{itemize}
+
+Posez les votres !
