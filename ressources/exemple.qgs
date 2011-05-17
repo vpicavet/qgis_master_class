@@ -1,13 +1,13 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="Master Class SIG-LL" version="1.7.0-Wroclaw">
+<qgis projectname="Master Class SIG-LL" version="1.8.0-Trunk">
     <title>Master Class SIG-LL</title>
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>592075.665670</xmin>
-            <ymin>122883.177256</ymin>
-            <xmax>609008.635939</xmax>
-            <ymax>133993.649293</ymax>
+            <xmin>596429.414861</xmin>
+            <ymin>127279.138133</ymin>
+            <xmax>600748.563140</xmax>
+            <ymax>130113.122686</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -24,15 +24,20 @@
         </destinationsrs>
     </mapcanvas>
     <legend>
-        <legendgroup open="true" checked="Qt::Unchecked" name="Vecteurs">
-            <legendlayer open="false" checked="Qt::Unchecked" name="bati_mapinfo" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="bati_mapinfo20110508175937639" visible="0"/>
+        <legendgroup open="true" checked="Qt::PartiallyChecked" name="Vecteurs">
+            <legendlayer open="true" checked="Qt::Unchecked" name="eau" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="eau20110517213516839" visible="0"/>
                 </filegroup>
             </legendlayer>
-            <legendlayer open="false" checked="Qt::Unchecked" name="jardin" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="jardin20110508173511769" visible="0"/>
+            <legendlayer open="true" checked="Qt::Checked" name="jardin" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="jardin20110508173511769" visible="1"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer open="true" checked="Qt::Checked" name="bati_mapinfo" showFeatureCount="0">
+                <filegroup open="true" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="bati_mapinfo20110508175937639" visible="1"/>
                 </filegroup>
             </legendlayer>
         </legendgroup>
@@ -66,7 +71,390 @@
             </legendlayer>
         </legendgroup>
     </legend>
-    <projectlayers layercount="7">
+    <Composer title="exemple de composition" visible="0">
+        <ComposerLabel valign="32" labelText="Liste des jardins présents sur la carte" id="" halign="4" margin="1">
+            <LabelFont description="Sans,10,-1,5,50,0,0,0,0,0"/>
+            <FontColor red="0" blue="0" green="0"/>
+            <ComposerItem width="91.89198606271776" x="92.93031358885017" y="201.8780487804878" rotation="0" height="5.710801393728246" frame="false" outlineWidth="0.3" zValue="9" lastValidViewScaleFactor="1.926174496644295" positionLock="false">
+                <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerLabel>
+        <ComposerMap keepLayerSet="true" id="0" previewMode="Cache" drawCanvasItems="true">
+            <Extent ymin="127643.5549089347" xmin="597213.9962389624" ymax="129843.5549111786" xmax="600613.9962424303"/>
+            <LayerSet>
+                <Layer>jardin20110508173511769</Layer>
+                <Layer>bati_mapinfo20110508175937639</Layer>
+            </LayerSet>
+            <Grid gridStyle="1" crossLength="3" penColorRed="0" penColorBlue="0" intervalX="1000" offsetX="0" intervalY="1000" offsetY="0" show="1" penWidth="0" penColorGreen="0">
+                <Annotation direction="3" precision="0" position="1" frameDistance="1" show="1" font="Liberation Mono,7,-1,5,50,0,0,0,0,0"/>
+            </Grid>
+            <ComposerItem width="170" x="21.375" y="38.47635135135135" rotation="0" height="110" frame="true" outlineWidth="0.3" zValue="1" lastValidViewScaleFactor="1.926174496644295" positionLock="false">
+                <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerMap>
+        <ComposerLegend symbolWidth="7" title="" boxSpace="2" titleFont="Sans,16,-1,5,50,0,0,0,0,0" groupFont="Sans,14,-1,5,50,0,0,0,0,0" layerFont="Sans,12,-1,5,50,0,0,0,0,0" symbolSpace="2" symbolHeight="4" layerSpace="2" iconLabelSpace="2" itemFont="Sans,12,-1,5,50,0,0,0,0,0">
+            <Model autoUpdate="0">
+                <GroupItem text="">
+                    <LayerItem layerId="bati_mapinfo20110508175937639" text="Limites de bâti">
+                        <VectorClassificationItemNg text="Sous sol">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="line" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleLine" locked="0">
+                                        <prop k="capstyle" v="square"/>
+                                        <prop k="color" v="255,0,0,255"/>
+                                        <prop k="customdash" v="5;2"/>
+                                        <prop k="joinstyle" v="bevel"/>
+                                        <prop k="offset" v="0"/>
+                                        <prop k="penstyle" v="dash"/>
+                                        <prop k="use_custom_dash" v="0"/>
+                                        <prop k="width" v="0.3"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Surface">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="line" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleLine" locked="0">
+                                        <prop k="capstyle" v="square"/>
+                                        <prop k="color" v="0,170,255,255"/>
+                                        <prop k="customdash" v="5;2"/>
+                                        <prop k="joinstyle" v="bevel"/>
+                                        <prop k="offset" v="0"/>
+                                        <prop k="penstyle" v="solid"/>
+                                        <prop k="use_custom_dash" v="0"/>
+                                        <prop k="width" v="0.3"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                    </LayerItem>
+                </GroupItem>
+            </Model>
+            <ComposerItem width="35" x="69.04878048780489" y="150.5191637630662" rotation="0" height="33.7" frame="false" outlineWidth="0.3" zValue="6" lastValidViewScaleFactor="1.926174496644295" positionLock="false">
+                <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerLegend>
+        <ComposerLegend symbolWidth="7" title="Légende" boxSpace="2" titleFont="Sans,16,-1,5,50,0,0,0,0,0" groupFont="Sans,14,-1,5,50,0,0,0,0,0" layerFont="Sans,12,-1,5,50,0,0,0,0,0" symbolSpace="2" symbolHeight="4" layerSpace="2" iconLabelSpace="2" itemFont="Sans,12,-1,5,50,0,0,0,0,0">
+            <Model autoUpdate="1">
+                <GroupItem text="Vecteurs">
+                    <LayerItem layerId="jardin20110508173511769" text="Jardins">
+                        <VectorClassificationItemNg text="Arboretum">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="165,0,38,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Décoration">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="165,0,38,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Espace Vert">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="215,48,39,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Esplanade">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="215,48,39,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Jardin">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="244,109,67,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Jardin Partagé">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="253,174,97,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Jardin d'immeubles">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="253,174,97,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Jardinet">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="254,224,139,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Jardinière">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="254,224,139,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Mail">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="255,255,191,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Murs végétalisés">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="217,239,139,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Parc">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="217,239,139,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Pelouse">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="166,217,106,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Plate-bande">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="166,217,106,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Promenade">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="102,189,99,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Square">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="26,152,80,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Talus">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="26,152,80,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                        <VectorClassificationItemNg text="Terrain de boules">
+                            <symbols>
+                                <symbol outputUnit="MM" alpha="1" type="fill" name="classificationSymbol">
+                                    <layer pass="0" class="SimpleFill" locked="0">
+                                        <prop k="color" v="0,104,55,255"/>
+                                        <prop k="color_border" v="0,0,0,255"/>
+                                        <prop k="offset" v="0,0"/>
+                                        <prop k="style" v="solid"/>
+                                        <prop k="style_border" v="solid"/>
+                                        <prop k="width_border" v="0.26"/>
+                                    </layer>
+                                </symbol>
+                            </symbols>
+                        </VectorClassificationItemNg>
+                    </LayerItem>
+                </GroupItem>
+            </Model>
+            <ComposerItem width="53" x="23.36236933797909" y="150.5574912891986" rotation="0" height="129.7" frame="false" outlineWidth="0.3" zValue="4" lastValidViewScaleFactor="1.986577181208054" positionLock="false">
+                <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerLegend>
+        <ComposerMap keepLayerSet="true" id="1" previewMode="Cache" drawCanvasItems="true">
+            <Extent ymin="128218.8558040929" xmin="600994.8248661772" ymax="129268.855805164" xmax="602794.8248680133"/>
+            <LayerSet>
+                <Layer>jardin20110508173511769</Layer>
+                <Layer>SCAN_H_GEOL50_SCAN_SCAN_F_GEOL25020110508192951628</Layer>
+            </LayerSet>
+            <Grid gridStyle="0" crossLength="3" penColorRed="0" penColorBlue="0" intervalX="0" offsetX="0" intervalY="0" offsetY="0" show="0" penWidth="0" penColorGreen="0">
+                <Annotation direction="0" precision="3" position="1" frameDistance="1" show="0" font="Sans,10,-1,5,50,0,0,0,0,0"/>
+            </Grid>
+            <ComposerItem width="36" x="23.03832752613241" y="41.18815331010452" rotation="0" height="21" frame="true" outlineWidth="0.3" zValue="8" lastValidViewScaleFactor="1.926174496644295" positionLock="true">
+                <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerMap>
+        <ComposerScaleBar segmentMillimeters="12.49999998725038" numMapUnitsPerScaleBarUnit="1" numSegments="2" height="2" labelBarSpace="1" outlineWidth="1" numSegmentsLeft="0" style="Single Box" unitLabel="m" font="Liberation Mono,10,-1,5,50,0,0,0,0,0" mapId="0" boxContentSpace="1" numUnitsPerSegment="250">
+            <BrushColor red="0" blue="0" green="0"/>
+            <ComposerItem width="36.99999997450077" x="152.3745644599303" y="148.9616724738676" rotation="0" height="8" frame="false" outlineWidth="0.3" zValue="3" lastValidViewScaleFactor="1.926174496644295" positionLock="false">
+                <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerScaleBar>
+        <ComposerPicture pictureWidth="10" file="/usr/share/qgis/svg/north_arrows/north-arrow_3_simple_symmetric_triangular.svg" pictureHeight="10" mapId="-1">
+            <ComposerItem width="10" x="139.6550522648083" y="149" rotation="0" height="10" frame="false" outlineWidth="0.3" zValue="7" lastValidViewScaleFactor="1.986577181208054" positionLock="true">
+                <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerPicture>
+        <ComposerShape shapeType="1" shapeWidth="170" outlineWidth="0.3" transparentFill="0" shapeHeight="140">
+            <OutlineColor alpha="255" red="0" blue="0" green="0"/>
+            <FillColor alpha="255" red="255" blue="255" green="255"/>
+            <ComposerItem width="170" x="21.375" y="147.993" rotation="0" height="140" frame="false" outlineWidth="1.4" zValue="2" lastValidViewScaleFactor="1.926174496644295" positionLock="false">
+                <FrameColor alpha="0" red="255" blue="255" green="255"/>
+                <BackgroundColor alpha="0" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerShape>
+        <ComposerAttributeTable contentFont="Liberation Mono,8,-1,5,50,0,0,0,0,0" gridStrokeWidth="0.5" gridColorGreen="0" composerMap="0" showGrid="1" headerFont="Sans,10,-1,5,50,0,0,0,0,0" gridColorBlue="0" lineTextDist="1" gridColorRed="0" showOnlyVisibleFeatures="1" vectorLayer="jardin20110508173511769">
+            <displayAttributes>
+                <attributeEntry index="0"/>
+                <attributeEntry index="3"/>
+            </displayAttributes>
+            <attributeAliasMap>
+                <aliasEntry key="0" value="Nom"/>
+                <aliasEntry key="3" value="Année de création"/>
+            </attributeAliasMap>
+            <sortColumns/>
+            <ComposerItem width="93.5" x="92.41114982578395" y="209.7421602787456" rotation="0" height="70" frame="true" outlineWidth="0.3" zValue="5" lastValidViewScaleFactor="0.6711409395973155" positionLock="false">
+                <FrameColor alpha="255" red="0" blue="0" green="0"/>
+                <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+            </ComposerItem>
+        </ComposerAttributeTable>
+        <Composition printResolution="300" paperWidth="210" snapGridOffsetX="0" snapGridResolution="0" snapGridOffsetY="0" snapping="0" paperHeight="297" printAsRaster="0"/>
+    </Composer>
+    <projectlayers layercount="8">
         <maplayer minimumScale="0" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
             <id>Geologie20110508192835202</id>
             <datasource>tiled=256;256;1056.63366300000006958726;528.31683169999996607658;264.15841580000000021755;132.07920790000000010878;66.03960395999999377636;26.41584157999999860067;13.22916666799999951820;6.61458333399999975910;2.64583333400000020319,url=http://geoservices.brgm.fr/WMS-C/</datasource>
@@ -95,9 +483,9 @@
                 <mDrawingStyle>SingleBandColorDataStyle</mDrawingStyle>
                 <mColorShadingAlgorithm>UndefinedShader</mColorShadingAlgorithm>
                 <mInvertColor boolean="false"/>
-                <mRedBandName></mRedBandName>
-                <mGreenBandName></mGreenBandName>
-                <mBlueBandName></mBlueBandName>
+                <mRedBandName>Not Set</mRedBandName>
+                <mGreenBandName>Not Set</mGreenBandName>
+                <mBlueBandName>Not Set</mBlueBandName>
                 <mGrayBandName>Bande 1</mGrayBandName>
                 <mStandardDeviations>0</mStandardDeviations>
                 <mUserDefinedRGBMinimumMaximum boolean="false"/>
@@ -112,11 +500,17 @@
                     </minMaxEntry>
                 </contrastEnhancementMinMaxValues>
                 <mNoDataValue mValidNoDataValue="false">0.000000</mNoDataValue>
+                <singleValuePixelList>
+                    <pixelListEntry pixelValue="0.000000" percentTransparent="100"/>
+                </singleValuePixelList>
+                <threeValuePixelList>
+                    <pixelListEntry red="0.000000" blue="0.000000" green="0.000000" percentTransparent="100"/>
+                </threeValuePixelList>
             </rasterproperties>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" ol_layer_type="4" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
             <id>OpenLayers_plugin_layer20110508192709209</id>
-            <datasource></datasource>
+            <datasource>.</datasource>
             <layername>OpenStreetMap</layername>
             <srs>
                 <spatialrefsys>
@@ -165,9 +559,9 @@
                 <mDrawingStyle>SingleBandColorDataStyle</mDrawingStyle>
                 <mColorShadingAlgorithm>UndefinedShader</mColorShadingAlgorithm>
                 <mInvertColor boolean="false"/>
-                <mRedBandName></mRedBandName>
-                <mGreenBandName></mGreenBandName>
-                <mBlueBandName></mBlueBandName>
+                <mRedBandName>Not Set</mRedBandName>
+                <mGreenBandName>Not Set</mGreenBandName>
+                <mBlueBandName>Not Set</mBlueBandName>
                 <mGrayBandName>Bande 1</mGrayBandName>
                 <mStandardDeviations>0</mStandardDeviations>
                 <mUserDefinedRGBMinimumMaximum boolean="false"/>
@@ -181,7 +575,7 @@
                         <max>1.79769e+308</max>
                     </minMaxEntry>
                 </contrastEnhancementMinMaxValues>
-                <mNoDataValue mValidNoDataValue="true">0.000000</mNoDataValue>
+                <mNoDataValue mValidNoDataValue="false">0.000000</mNoDataValue>
                 <singleValuePixelList>
                     <pixelListEntry pixelValue="0.000000" percentTransparent="100"/>
                 </singleValuePixelList>
@@ -207,7 +601,6 @@
                 </spatialrefsys>
             </srs>
             <transparencyLevelInt>255</transparencyLevelInt>
-            <customproperties/>
             <provider encoding="UTF-8">ogr</provider>
             <vectorjoins/>
             <renderer-v2 attr="NIVEAU" symbollevels="0" type="categorizedSymbol">
@@ -225,7 +618,7 @@
                             <prop k="offset" v="0"/>
                             <prop k="penstyle" v="dash"/>
                             <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.5"/>
+                            <prop k="width" v="0.3"/>
                         </layer>
                     </symbol>
                     <symbol outputUnit="MM" alpha="1" type="line" name="1">
@@ -237,7 +630,7 @@
                             <prop k="offset" v="0"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="0.5"/>
+                            <prop k="width" v="0.3"/>
                         </layer>
                     </symbol>
                 </symbols>
@@ -290,9 +683,9 @@
                 <edittype type="0" name="LIBELLE"/>
                 <edittype type="0" name="NIVEAU"/>
             </edittypes>
-            <editform></editform>
+            <editform>.</editform>
             <editforminit></editforminit>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <attributeactions/>
             <overlay display="false" type="diagram">
                 <renderer item_interpretation="linear">
@@ -306,6 +699,71 @@
                 <scalingAttribute>0</scalingAttribute>
             </overlay>
         </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>eau20110517213516839</id>
+            <datasource>./vecteurs/eau.shp</datasource>
+            <layername>eau</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=lcc +lat_1=48.5985227778 +lat_2=50.3959116667 +lat_0=49.5 +lon_0=2.3372291667 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999904194 +units=m +no_defs</proj4>
+                    <srsid>100021</srsid>
+                    <srid>0</srid>
+                    <authid>USER:100021</authid>
+                    <description> * SCR généré (+proj=lcc +lat_1=48.5985227778 +lat_2=50.3959116667 +lat_0=49.5 +lon_0=2.3372291667 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999904194 +units=m +no_defs)</description>
+                    <projectionacronym>lcc</projectionacronym>
+                    <ellipsoidacronym></ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="UTF-8">ogr</provider>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="209,153,41,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield></displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Étiquette"/>
+                <family fieldname="" name="Sans"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
+            <attributeactions/>
+        </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>jardin20110508173511769</id>
             <datasource>./vecteurs/jardin.shp</datasource>
@@ -313,17 +771,16 @@
             <srs>
                 <spatialrefsys>
                     <proj4>+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs</proj4>
-                    <srsid>100019</srsid>
-                    <srid>0</srid>
-                    <authid>USER:100019</authid>
-                    <description> * SCR généré (+proj=lcc +lat_1=49.5 +lat_0=49.5 +lon_0=0 +k_0=0.9998773399999999 +x_0=600000 +y_0=200000 +a=6378249.2 +b=6356514.999978254 +pm=2.337229167 +units=m +no_defs)</description>
+                    <srsid>10081</srsid>
+                    <srid>320002101</srid>
+                    <authid>IGNF:LAMB1</authid>
+                    <description>Lambert I</description>
                     <projectionacronym>lcc</projectionacronym>
-                    <ellipsoidacronym></ellipsoidacronym>
+                    <ellipsoidacronym>IGNF:ELG010</ellipsoidacronym>
                     <geographicflag>false</geographicflag>
                 </spatialrefsys>
             </srs>
             <transparencyLevelInt>255</transparencyLevelInt>
-            <customproperties/>
             <provider encoding="System">ogr</provider>
             <vectorjoins/>
             <renderer-v2 attr="DENOM" symbollevels="0" type="categorizedSymbol">
@@ -548,7 +1005,53 @@
                 <rotation field=""/>
                 <sizescale field=""/>
             </renderer-v2>
-            <customproperties/>
+            <customproperties>
+                <property key="labeling" value="pal"/>
+                <property key="labeling/addDirectionSymbol" value="false"/>
+                <property key="labeling/bufferColorB" value="255"/>
+                <property key="labeling/bufferColorG" value="255"/>
+                <property key="labeling/bufferColorR" value="255"/>
+                <property key="labeling/bufferSize" value="0.6"/>
+                <property key="labeling/dataDefinedProperty0" value=""/>
+                <property key="labeling/dataDefinedProperty1" value=""/>
+                <property key="labeling/dataDefinedProperty10" value="43"/>
+                <property key="labeling/dataDefinedProperty11" value=""/>
+                <property key="labeling/dataDefinedProperty12" value=""/>
+                <property key="labeling/dataDefinedProperty13" value=""/>
+                <property key="labeling/dataDefinedProperty14" value="44"/>
+                <property key="labeling/dataDefinedProperty2" value=""/>
+                <property key="labeling/dataDefinedProperty3" value=""/>
+                <property key="labeling/dataDefinedProperty4" value=""/>
+                <property key="labeling/dataDefinedProperty5" value=""/>
+                <property key="labeling/dataDefinedProperty6" value=""/>
+                <property key="labeling/dataDefinedProperty7" value=""/>
+                <property key="labeling/dataDefinedProperty8" value=""/>
+                <property key="labeling/dataDefinedProperty9" value="42"/>
+                <property key="labeling/dist" value="0"/>
+                <property key="labeling/distInMapUnits" value="false"/>
+                <property key="labeling/enabled" value="true"/>
+                <property key="labeling/fieldName" value="NOM"/>
+                <property key="labeling/fontFamily" value="Sans"/>
+                <property key="labeling/fontItalic" value="false"/>
+                <property key="labeling/fontSize" value="7"/>
+                <property key="labeling/fontSizeInMapUnits" value="false"/>
+                <property key="labeling/fontStrikeout" value="false"/>
+                <property key="labeling/fontUnderline" value="false"/>
+                <property key="labeling/fontWeight" value="50"/>
+                <property key="labeling/labelPerPart" value="false"/>
+                <property key="labeling/mergeLines" value="false"/>
+                <property key="labeling/minFeatureSize" value="8"/>
+                <property key="labeling/multiLineLabels" value="true"/>
+                <property key="labeling/obstacle" value="false"/>
+                <property key="labeling/placement" value="4"/>
+                <property key="labeling/placementFlags" value="0"/>
+                <property key="labeling/priority" value="5"/>
+                <property key="labeling/scaleMax" value="20000"/>
+                <property key="labeling/scaleMin" value="1"/>
+                <property key="labeling/textColorB" value="0"/>
+                <property key="labeling/textColorG" value="0"/>
+                <property key="labeling/textColorR" value="0"/>
+            </customproperties>
             <displayfield>NOM</displayfield>
             <label>0</label>
             <labelattributes>
