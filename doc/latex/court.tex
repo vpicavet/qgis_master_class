@@ -17,7 +17,7 @@ Répétez la manipulation en sélectionnant cette fois \textbf{Mapinfo} comme fo
 
 \subsection{Importer des rasters}
 
-Ouvrez le menu \mainmenuopt{Couches} \arrow \dropmenuopttwo{mActionAddRasterLayer.png}{Ajouter une couche raster}, 
+Ouvrez le menu \mainmenuopt{Couches}\arrow\dropmenuopttwo{mActionAddRasterLayer.png}{Ajouter une couche raster}, 
 
 Sélectionnez le format \textbf{GeoTIFF} puis les fichiers \filename{srtm bassin parisien.tif} et \filename{srtm ombrage.tif} 
 
@@ -62,7 +62,7 @@ Cochez la case \checkbox{Activer la projection 'à la volée'}, elle permet de r
 
 Ouvrez le menu \mainmenuopt{Préférences}\arrow \dropmenuopttwo{mActionOptions}{Options}.
 
-Déplacez-vous dans l'onglet \tab{Outils cartographiques} et \selectstring{ellipsoïde pour les mesures de distances }{GRS 1980}.
+Déplacez-vous dans l'onglet \tab{Outils cartographiques} et \selectstring{ellipsoïde pour les mesures de distances}{GRS 1980}.
 
 
 \section{Utiliser l'interface}\label{sec:ui_use} 
@@ -132,12 +132,20 @@ Pour accéder à la fenêtre \dialog{Propriétés de la couche}, double-cliquez 
 L'onglet \textbf{Style} est affiché, la représentation par défaut est le symbole unique où un style unique est appliqué à tous les objets de la couche. On peut d'ici modifier la \textbf{couleur} et la \textbf{transparence} de la couche.
         
 \section{Symbologie avancée}
-  
+
+\subsection{Classifier}
+
 Pour opérer une classification des éléments de la couche, il faut passer dans la liste de \textit{symbole unique} à \textit{catégorisé} et choisir la colonne qui permettra de définir les différentes classes, ici la colonne \textit{DENOM}. Cliquez ensuite sur le bouton \button{Classer}, QGIS créé une liste des classes en déclinant une palette de couleurs.
 
 Plutôt que de changer les couleurs manuellement nous allons charger le style \filename{style jardin classification.qml} depuis le bouton \button{Charger le style}.
 
-\section{Composeur}
+\subsection{Étiqueter}
+
+Allez dans le menu \mainmenuopt{Couches}\arrow\dropmenuopttwo{labeling}{Étiquetage}.
+
+Sélectionner \selectstring{Champ contenant les étiquettes}{NOM} et cochez la case \checkbox{Étiqueter cette couche}.
+
+\section{Composer une carte}
 
 Cliquez sur l'icône \includegraphics[width=0.7cm]{mActionNewComposer} ou le menu \mainmenuopt{Fichier} > \dropmenuopttwo{mActionNewComposer}{Nouveau composeur d'impression}.
 
@@ -149,4 +157,12 @@ Le composeur de carte affiche deux onglets :
 \item L'onglet \tab{Historique des commandes} permet de d'annuler ou refaire des manipulations.
 \end{itemize}
 
-Ajoutez une vue sur le canevas de la carte en utilisant le bouton \includegraphics[width=0.7cm]{mActionAddMap}
+Ajoutez une vue sur le canevas de la carte en utilisant le bouton \includegraphics[width=0.7cm]{mActionAddMap}.
+
+Déplacez le contenu de la vue en utilisant le bouton \includegraphics[width=0.7cm]{mActionSelectPan}.
+
+Ajoutez une échelle graphique en utilisant le bouton \includegraphics[width=0.7cm]{mActionScaleBar} et en cliquant sur la feuille.
+
+Ajoutez une flèche pointant vers le Nord en utilisant le bouton \includegraphics[width=0.7cm]{mActionSaveMapAsImage} et en cliquant sur la carte puis sélectionnez le cadre et déplacez-vous dans l'onglet \textit{Objet}. Dans le cadre d'aperçu, sélectionnez une image de flèche.
+
+Exporter le résultat en PDF en appuyant sur le bouton \includegraphics[width=0.7cm]{mActionSaveAsPDF}.
